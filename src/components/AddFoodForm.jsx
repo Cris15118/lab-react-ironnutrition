@@ -7,7 +7,7 @@ import { useState } from 'react';
 function AddFoodForm(props) {
 
     const [nameInput, setNameInput]= useState("");
-    const [imageInput, setImageInput] = useState("");
+    const [imageInput, setImageInput] = useState("")
     const[caloriesInput, setCaloriesInput]= useState(0)
     const[servingsInput, setServingsInput]= useState(0)
    
@@ -15,7 +15,7 @@ function AddFoodForm(props) {
         setNameInput(event.target.value)
     }
     const handleImageChange = (event)=>{
-        setImageInput(event.target.file)
+        setImageInput(event.target.value)
     }
     const handleCaloriesChange = (event)=>{
         setCaloriesInput(event.target.value)
